@@ -1,0 +1,88 @@
+/* General Style */
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #fa79c9;
+}
+
+header, footer {
+    background-color: #3498DB;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #FE5EC1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+ header {
+   flex-direction: column;
+ } 
+ 
+ .search-bar {
+    width: 100%;
+    margin-top: 1em;
+ }
+
+ nav ul {
+    flex-direction: column;
+ }
+
+ nav a {
+    margin-bottom: 1em;
+ }
+}
